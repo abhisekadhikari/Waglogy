@@ -8,6 +8,10 @@ route.get("/", (req, res) => {
     })
 })
 
+route.get('/home', (req, res) => {
+    res.render('home')
+})
+
 route.post("/post", (req, res) => {
     data = req.body.name
     role = req.body.role
