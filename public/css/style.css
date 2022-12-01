@@ -1,3 +1,5 @@
+
+
 /* navbar.css */
 body {
     margin: 0;
@@ -156,5 +158,115 @@ body {
   .hero img{
   padding-top: 100px;  
   }
+/* 
+  contact form contact page */
+  .c-form{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .cont{
+    padding-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
 
-  
+  /* 
+  contact form contact page */
+
+
+  /* feedback form starts here */
+
+
+
+
+  /* feedback form ends here */
+/* map */
+.card.map-card .living-coral {
+  background-color: #68ddfa;
+}
+
+.card.map-card .living-coral-text {
+  color: #65dbf0;
+}
+
+.card.map-card .table th {
+  width: 2rem;
+}
+
+.card.map-card .pt-3-5 {
+  padding-top: 1.25rem;
+}
+
+.card.map-card .card-body {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 20%;
+  overflow: hidden;
+  background-color: transparent;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.card.map-card .card-body.closed {
+  top: 100%;
+  height: 7.5rem;
+  margin-top: -7.5rem;
+}
+
+.card.map-card .map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.card.map-card .map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.card.map-card .button .btn-floating {
+  margin-top: -1.5rem;
+}
+
+
+/* services card */
+.fadedfx {
+  background-color: #fe5652;
+  visibility: hidden;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

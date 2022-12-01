@@ -9,4 +9,8 @@ route.get('/contact', (req, res) => {
     res.render('contact')
 })
 
+
+route.get('/services', (req, res) => {
+    res.render('services')
+})
 module.exports = route
