@@ -5,4 +5,8 @@ route.get('/', (req, res) => {
     res.render('index')
 })
 
+route.get('/contact', (req, res) => {
+    res.render('contact')
+})
+
 module.exports = route
