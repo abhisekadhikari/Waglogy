@@ -21,6 +21,7 @@
   "dependencies": {
     "body-parser": "^1.20.1",
     "bootstrap-icons": "^1.10.2",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
     "mongoose": "^6.7.5",
