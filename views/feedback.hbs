@@ -1,5 +1,18 @@
-<h1>Feedbacks: </h1>
 <br><br><br><br><br>
-<p>{{data}}</p>
+<center>
+<h1>Feedbacks</h1>
+{{#each contact}}
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAACLCAMAAABmx5rNAAAAMFBMVEXk5ueutLepr7Ln6erh4+Tq7O2/w8bJzc/Y29zEyMq5vsG2u77c3+DV2NrO0tSssbXimkN1AAADLUlEQVR4nO2a23KjMAxAwfIF3///b2tMkt22Ib6ABLPrM9PpZPrQE0k2WPI0DQaDwWAwGAwGg8Fg8J8Aj58JAK4VEbAoLY21RurghLjMRPBgGYtxzsTImPHTJcEBJ+enx5P0UdPbAJfsh8gzPIrYBsL81mQLjqOUAcn2TFaYIiti4PNHlSRjiCID7rNIzpO5jUqSsQSRSQmqIkp8l8nsLqDvMI0dmcIK+ibjcWXAV0YlpwlVZRL1JskFNUugqjOUs7QgylSuoVdgDN7+C7qhWnJg8J5M0GaybjJYLuCbqiXLIKmkvaUxRSlJASswrSYJpAc2LM0pSnAcl9ZVlFlwXEyHClLBNG50G1GibHdV71C/sDdymVFcli4VdicXlNpteY3CdrlTXPpc4j+/jvr2Opz9hdsOF4az73Y+jzBU7vWcvtH7S897XcRqxNzpfbfpMP0Ax2TqOR/hnagbj9Oo58bm8zTORrfRGJjo8FQaKwa5SwZLS18KuWEndHWWInK/bn1C1vYxCRrx1f1dimZzXd+bZiIAfH9e80oQRVTqZEgS9LQpzI8C5RAUwv4IKVpOPOTj+v28kcVAP6hONr/nsNEqcc1UmHsTM6vF+ksu18yns42YlqClSUgVHFw3t882AGIDrrvQkBxg4s4HpXRGBb+4FCnaeknfn6fU2JmtvOolf5qtDJ5PJCFaPXzSSP95Z++N6Q9JCN0HhFMm7ll8E2JWe7xaBnB6rvD4y0cuKMEBCKb8fP7lY8+/9QFcle4w7NlE7c5M1WrS1cR82MjTjmzw6aFcG5tzMgX+oEm2Yep4FQNvb3S8t7FHEyX8gUL5QTpGHrCB6aSgbBwJDUz2TJW1hnsvFTSdnSvpfCtP6weBrt5Dx5C+UqY5MhBwVDq68hi18iSqpjQBx1NpbvqevJh/0NIlEqduce+odsFaQn+o70N0DdDaqC0Z/Ayt1IXFUajMVQu7ulF5kKqwYBfuBqsITN9UsYdyWAgW0Ub0xbAEqrCUL0gKosqdK0YXQKZSvMUKRKtopfTuAIouLnPhdjrdik7YQr1IOpXi/QLLCCmMRoGQQooGg8FgMLiELyLJKamW3d1mAAAAAElFTkSuQmCC" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+    <h5 class="card-title">{{this.email}}</h5>
+    <p class="card-text">{{this.message}}</p>
+    <p class="card-text">{{this.number}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<br><br>
+{{/each}}
+</center>
 <br><br><br><br><br>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.3139158005592!2d88.30074030290223!3d27.14641170560646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce3f453c207a3ebf!2sWaglogy!5e0!3m2!1sen!2sin!4v1669906623007!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

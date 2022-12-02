@@ -29,17 +29,17 @@ route.get('/privicy',(req, res)=> {
     res.render('privicy')
 })
 route.post('/api/contact', (req, res) => {
-    const {name, number, email} = req.body
-    if (!name || !number|| !email) {
-        res.status(500).json({
-            Error: "Fill all The Filds"
+    const {name, number, email, message} = req.body
+    if (!name || !number|| !email || !message) {
+        return res.status(500).json({
+            Error: "Fill all The Fields"
         })
     } else {
-        console.log(req.body)
-        const data = new Contact({name, email, number})
+        const data = new Contact({name, email, number, message})
         data.save()
+        // res.redirect('/contact')
         res.status(200).json({
-            message: "Successful"
+            message: "Send Successfully"
         })
     }
 })
@@ -58,13 +58,16 @@ route.post('/api/feedback', (req, res) => {
 
 route.get('/admin', async (req, res) => {
     data = await Feedback.find({})
-    if(!data)
+    contact = await Contact.find({}).lean()
+    if(!data || !contact)
     {
         return res.status(404).json({
             message: "There Is No Feedbacks"
         })
     }
-    res.render('feedback', {data})
+    res.render('feedback', {
+        data, contact
+    })
 })
 
 
