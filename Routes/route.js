@@ -11,12 +11,11 @@ route.get('/contact', (req, res) => {
     res.render('contact')
 })
 
-<<<<<<< HEAD
+
 
 route.get('/services', (req, res) => {
     res.render('services')
 })
-=======
 route.post('/api/contact', (req, res) => {
     const {name, number, email} = req.body
     if (!name || !number|| !email) {
@@ -56,5 +55,4 @@ route.get('/admin', async (req, res) => {
     res.render('feedback', {data})
 })
 
->>>>>>> master
 module.exports = route
