@@ -809,17 +809,15 @@ body-parser@1.20.1, body-parser@^1.20.1:
     type-is "~1.6.18"
     unpipe "1.0.0"
 
-<<<<<<< HEAD
 bootstrap-icons@^1.10.2:
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/bootstrap-icons/-/bootstrap-icons-1.10.2.tgz#6a5729e0475e007ed82d752225645e4e6fec48d7"
   integrity sha512-PTPYadRn1AMGr+QTSxe4ZCc+Wzv9DGZxbi3lNse/dajqV31n2/wl/7NX78ZpkvFgRNmH4ogdIQPQmxAfhEV6nA==
-=======
+
 bowser@^2.11.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/bowser/-/bowser-2.11.0.tgz#5ca3c35757a7aa5771500c70a73a9f91ef420a8f"
   integrity sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==
->>>>>>> master
 
 brace-expansion@^1.1.7:
   version "1.1.11"
