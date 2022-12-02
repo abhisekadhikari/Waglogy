@@ -13,4 +13,12 @@ route.get('/contact', (req, res) => {
 route.get('/services', (req, res) => {
     res.render('services')
 })
+route.get('/studentc', (req, res) => {
+    res.render('studentc')
+})
+
+route.get('/about',(req, res)=> {
+res.render('about')
+
+})
 module.exports = route
