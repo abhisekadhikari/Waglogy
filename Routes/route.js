@@ -16,6 +16,18 @@ route.get('/contact', (req, res) => {
 route.get('/services', (req, res) => {
     res.render('services')
 })
+
+route.get('/studentc', (req, res) => {
+    res.render('studentc')
+})
+
+route.get('/about',(req, res)=> {
+res.render('about')
+
+})
+route.get('/privicy',(req, res)=> {
+    res.render('privicy')
+})
 route.post('/api/contact', (req, res) => {
     const {name, number, email, message} = req.body
     if (!name || !number|| !email || !message) {
@@ -57,5 +69,6 @@ route.get('/admin', async (req, res) => {
         data, contact
     })
 })
+
 
 module.exports = route
