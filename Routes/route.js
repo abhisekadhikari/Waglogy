@@ -94,18 +94,4 @@ route.post(
   }
 );
 
-route.get("/admin", async (req, res) => {
-  data = await Feedback.find({});
-  contact = await Contact.find({}).lean();
-  if (!data || !contact) {
-    return res.status(404).json({
-      message: "There Is No Feedbacks",
-    });
-  }
-  res.render("feedback", {
-    data,
-    contact,
-  });
-});
-
 module.exports = route;
