@@ -6,7 +6,6 @@ const { check, validationResult } = require("express-validator");
 
 route.get("/", async (req, res) => {
   const data = await Feedback.find({}).lean();
-  //   res.json(data);
   res.render("index", {
     data,
   });
