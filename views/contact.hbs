@@ -1,7 +1,4 @@
 {{>header}}
-<br>
-<br>
-<br>
 
 {{!-- <div class="c-form">
   <form>
@@ -47,8 +44,12 @@
       </button>
     </div>
   </form>
-</div> --}}
+</div>  --}}
+<div class="hero">
 
+    <img style="margin-bottom: 30px;" src="/images/contact.png" class="img-fluid" alt="...">
+
+</div>
 
 <!--Section: Contact v.2-->
 <div class="c-form">
@@ -73,8 +74,9 @@
             <!--Grid column-->
             <div class="col-md-6">
               <div class="md-form mb-0">
+                 <label for="name" class="">Your name</label>
                 <input type="text" id="name" name="name" class="form-control">
-                <label for="name" class="">Your name</label>
+               
               </div>
             </div>
             <!--Grid column-->
@@ -82,12 +84,14 @@
             <!--Grid column-->
             <div class="col-md-6">
               <div class="md-form mb-0">
-                <input type="text" id="email" name="email" class="form-control">
                 <label for="email" class="">Your email</label>
+                <input type="text" id="email" name="email" class="form-control">
+                
               </div>
               <div class="md-form mb-0">
-                <input type="number" id="number" name="number" class="form-control">
                 <label for="number" class="">Your Number</label>
+                <input type="number" id="number" name="number" class="form-control">
+                
               </div>
             </div>
             <!--Grid column-->
@@ -98,10 +102,11 @@
           <!--Grid row-->
           <div class="row">
             <div class="col-md-12">
-              {{!-- <div class="md-form mb-0">
+               <div class="md-form mb-0">
+                 <label for="subject" class="">Subject</label>
                 <input type="text" id="subject" name="subject" class="form-control">
-                <label for="subject" class="">Subject</label>
-              </div> --}}
+               
+              </div> 
             </div>
           </div>
           <!--Grid row-->
@@ -113,14 +118,16 @@
             <div class="col-md-12">
 
               <div class="md-form">
-                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                 <label for="message">Your message</label>
+                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                
               </div>
 
             </div>
           </div>
           <!--Grid row-->
-          <button type="submit">Submit</button>
+          <br>
+          <button class="btn btn-primary" type="submit">Submit</button>
         </form>
 
         <div class="text-center text-md-left">
@@ -223,6 +230,6 @@
     </div>
 
   </section>
-</div>
+</div> 
 {{!-- map ends here --}}
-{{>footer}}
+{{>footer}} 
