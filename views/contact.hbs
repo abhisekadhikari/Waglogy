@@ -68,6 +68,17 @@
       <div class="col-md-9 mb-md-0 mb-5">
         <form id="contact-form" name="contact-form" action="/api/contact" method="POST">
 
+{{#each alert}}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>{{this.msg}}</strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+{{/each}}
+                    {{!-- message --}}
+
+
           <!--Grid row-->
           <div class="row">
 
@@ -99,16 +110,6 @@
           </div>
           <!--Grid row-->
 
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-md-12">
-               <div class="md-form mb-0">
-                 <label for="subject" class="">Subject</label>
-                <input type="text" id="subject" name="subject" class="form-control">
-               
-              </div> 
-            </div>
-          </div>
           <!--Grid row-->
 
           <!--Grid row-->
