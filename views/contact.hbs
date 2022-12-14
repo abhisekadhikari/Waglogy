@@ -44,10 +44,10 @@
       </button>
     </div>
   </form>
-</div>  --}}
+</div> --}}
 <div class="hero">
 
-    <img style="margin-bottom: 30px;" src="/images/contact.png" class="img-fluid" alt="...">
+  <img style="margin-bottom: 30px;" src="/images/contact.png" class="img-fluid" alt="...">
 
 </div>
 
@@ -68,15 +68,15 @@
       <div class="col-md-9 mb-md-0 mb-5">
         <form id="contact-form" name="contact-form" action="/api/contact" method="POST">
 
-{{#each alert}}
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong>{{this.msg}}</strong>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-{{/each}}
-                    {{!-- message --}}
+          {{#each alert}}
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>{{this.msg}}</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          {{/each}}
+          {{!-- message --}}
 
 
           <!--Grid row-->
@@ -85,9 +85,9 @@
             <!--Grid column-->
             <div class="col-md-6">
               <div class="md-form mb-0">
-                 <label for="name" class="">Your name</label>
+                <label for="name" class="">Your name</label>
                 <input type="text" id="name" name="name" class="form-control">
-               
+
               </div>
             </div>
             <!--Grid column-->
@@ -97,12 +97,12 @@
               <div class="md-form mb-0">
                 <label for="email" class="">Your email</label>
                 <input type="text" id="email" name="email" class="form-control">
-                
+
               </div>
               <div class="md-form mb-0">
                 <label for="number" class="">Your Number</label>
                 <input type="number" id="number" name="number" class="form-control">
-                
+
               </div>
             </div>
             <!--Grid column-->
@@ -121,7 +121,7 @@
               <div class="md-form">
                 <label for="message">Your message</label>
                 <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                
+
               </div>
 
             </div>
@@ -132,8 +132,6 @@
         </form>
 
         <div class="text-center text-md-left">
-          {{!-- <a id="button" class="btn btn-primary"
-            onclick="document.getElementById('contact-form').submit();">Send</a> --}}
         </div>
         <div class="status"></div>
       </div>
@@ -147,12 +145,18 @@
           </li>
 
           <li><i class="fas fa-phone mt-4 fa-2x"></i>
-            <p>+ 91 62967 67187</p>
-            <p>+ 91 9733 8141 68</p>
+            <p>
+              <a href="tel: +916296767187">+ 91 62967 67187</a>
+            </p>
+            <p>
+              <a href="tel: +919733814168">+ 91 97338 14168</a>
+            </p>
           </li>
 
           <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-            <p>contact@waglogy.tech</p>
+            <p>
+              <a href="mailto: contact@waglogy.tech">contact@waglogy.tech</a>
+            </p>
           </li>
         </ul>
       </div>
@@ -232,6 +236,6 @@
     </div>
 
   </section>
-</div> 
+</div>
 {{!-- map ends here --}}
-{{>footer}} 
+{{>footer}}
