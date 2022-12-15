@@ -1,10 +1,11 @@
 const express = require("express");
+const jwt = require("jsonwebtoken");
 const route = express.Router();
 const Contact = require("../Model/Schema");
 const Feedback = require("../Model/Feedback");
 const Admin = require("../Model/Admin");
 const { check, validationResult } = require("express-validator");
-const { Router } = require("express");
+const auth = require("./auth");
 
 route.get("/", async (req, res) => {
   const data = await Feedback.find({}).lean();
@@ -91,9 +92,16 @@ route.post("/login", async (req, res) => {
     if (data.password != password) {
       return res.status(404).json({ message: "Enter valid Cradentials" });
     }
-    // res.status(200).json({ message: data });
-    // res.render("admin");
-    res.status(200).redirect("admin");
+    const ID = data._id.toString();
+    const token = jwt.sign(ID, `${process.env.SECRET_KEY}`);
+    res
+      .cookie("jwt", token, {
+        expires: new Date(Date.now() + 300000),
+        httpOnly: true,
+        secure: true,
+      })
+      .status(200)
+      .redirect("/admin");
   } catch (error) {
     console.log(error);
   }
@@ -103,8 +111,17 @@ route.get("/login", (req, res) => {
   res.render("login");
 });
 
-route.get("/admin", (req, res) => {
-  res.render("admin");
+route.get("/admin", auth, async (req, res) => {
+  const id = jwt.verify(req.cookies.jwt, process.env.SECRET_KEY);
+  const admin = await Admin.findOne({ _id: id });
+  const feedbackData = await Feedback.find({}).lean();
+  const contactData = await Contact.find({}).lean();
+  const name = admin.name;
+  res.render("admin", {
+    name,
+    feedbackData,
+    contactData,
+  });
 });
 
 route.get("*", (req, res) => {
