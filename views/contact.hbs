@@ -1,194 +1,224 @@
 
-<div class="hero">
-
-  <img style="margin-bottom: 30px;" src="/images/contact.png" class="img-fluid" alt="...">
-
-</div>
-
-<!--Section: Contact v.2-->
-<div class="c-form">
-  <section class="mb-4">
-
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
-      directly. Our team will come back to you within
-      a matter of hours to help you.</p>
-
-    <div class="row">
-
-      <!--Grid column-->
-      <div class="col-md-9 mb-md-0 mb-5">
-        <form id="contact-form" name="contact-form" action="/api/contact" method="POST">
-
-          {{#each alert}}
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>{{this.msg}}</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          {{/each}}
-          {{!-- message --}}
-
-
-          <!--Grid row-->
-          <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-6">
-              <div class="md-form mb-0">
-                <label for="name" class="">Your name</label>
-                <input type="text" id="name" name="name" class="form-control">
-
-              </div>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6">
-              <div class="md-form mb-0">
-                <label for="email" class="">Your email</label>
-                <input type="text" id="email" name="email" class="form-control">
-
-              </div>
-              <div class="md-form mb-0">
-                <label for="number" class="">Your Number</label>
-                <input type="number" id="number" name="number" class="form-control">
-
-              </div>
-            </div>
-            <!--Grid column-->
-
-          </div>
-          <!--Grid row-->
-
-          <!--Grid row-->
-
-          <!--Grid row-->
-          <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-12">
-
-              <div class="md-form">
-                <label for="message">Your message</label>
-                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-
-              </div>
-
-            </div>
-          </div>
-          <!--Grid row-->
-          <br>
-          <button class="btn btn-primary" type="submit">Submit</button>
-        </form>
-
-        <div class="text-center text-md-left">
         </div>
-        <div class="status"></div>
-      </div>
-      <!--Grid column-->
+        <!-- Spinner End -->
 
-      <!--Grid column-->
-      <div class="col-md-3 text-center">
-        <ul class="list-unstyled mb-0">
-          <li><i class="fas fa-map-marker-alt fa-2x"></i>
-            <p>Chisopani ,Namchi District,Sikkim India</p>
-          </li>
 
-          <li><i class="fas fa-phone mt-4 fa-2x"></i>
-            <p>
-              <a href="tel: +916296767187">+ 91 62967 67187</a>
-            </p>
-            <p>
-              <a href="tel: +919733814168">+ 91 97338 14168</a>
-            </p>
-          </li>
 
-          <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-            <p>
-              <a href="mailto: contact@waglogy.tech">contact@waglogy.tech</a>
-            </p>
-          </li>
-        </ul>
-      </div>
-      <!--Grid column-->
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white animated zoomIn">Contact Us</h1>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
 
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                            <h6 class="position-relative d-inline text-primary ps-4">Contact Us</h6>
+                            <h2 class="mt-2">Contact For Any Query</h2>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <form onsubmit="sendEmail(); reset(); return false;">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Chisopani,Sikkim,India</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91 97338 14168</p>
+                        <p><i class="fa fa-envelope me-3"></i>contact@waglogy.tech</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Popular Link</h5>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Project Gallery</h5>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Join Our Mailing List To Receive The News & Latest Trends</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Waglogy</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://waglogy.tech">Waglogy</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
     </div>
+<script>
 
-  </section>
-</div>
-<!--Section: Contact v.2-->
+function sendEmail(){
 
-{{!-- form end here --}}
+ 
+Email.send({
+  Host : "smtp.elasticemail.com",
+  Username : "bhupeshxrma24233@gmail.com",
+  Password : "55E041A687D4D366FDD9F6E69C33C9887ED1",
+  To : "techbhupesh@gmail.com",
+  From : document.getElementById("email").value,
+  Subject : "New enquary on portfolio",
+  Body : "Name: " + document.getElementById("name").value
+  + "<br> Email: " + document.getElementById("email").value
+  + "<br> Phone: " +  document.getElementById("phone").value
+  + "<br> Phone: " +  document.getElementById("subject").value
+  +"<br> Message: " +  document.getElementById("message").value
+}).then(
+message => alert("message sent sucessfully")
+);
+}
 
+</script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-{{!-- map start here --}}
-<div class="container">
-  <section class="mx-auto my-5" style="max-width: 23rem;">
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
 
-    <div class="card map-card">
-      <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.3362108648253!2d88.29959231443908!3d27.145709983027817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e429bddf391c81%3A0xce3f453c207a3ebf!2sWaglogy!5e0!3m2!1sen!2sin!4v1669871420386!5m2!1sen!2sin"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="card-body closed px-0">
-        <div class="button px-2 mt-3">
-          <a class="btn btn-floating btn-lg living-coral text-white float-end" style="margin-right: .75rem;"><i
-              class="fas fa-bicycle"></i></a>
-        </div>
-        <div class="bg-white px-4 pb-4 pt-3-5">
-          <h5 class="card-title h5 living-coral-text">Waglogy</h5>
-          <div class="d-flex justify-content-between living-coral-text">
-            <h6 class="card-subtitle font-weight-light">One Step Tech Solution</h6>
-            <h6 class="font-small font-weight-light mt-n1"> </h6>
-          </div>
-          <hr>
-          <div class="d-flex justify-content-between pt-2 mt-1 text-center text-uppercase living-coral-text">
-            <div>
-              <i class="fas fa-phone fa-lg mb-3"></i>
-              <p class="mb-0">One Step</p>
-            </div>
-            <div>
-              <i class="fas fa-cat fa-lg mb-3"></i>
-              <p class="mb-0">Tech</p>
-            </div>
-            <div>
-              <i class="far fa-grin-beam-sweat fa-lg mb-3"></i>
-              <p class="mb-0">Solution</p>
-            </div>
-          </div>
-          <hr>
-          <table class="table table-borderless">
-            <tbody>
-              <tr>
-                <th scope="row" class="px-0 pb-3 pt-2">
-                  <i class="fas fa-map-marker-alt living-coral-text"></i>
-                </th>
-                <td class="pb-3 pt-2">Chisopani,Namchi District,Sikkim India</td>
-              </tr>
-              <tr class="mt-2">
-                <th scope="row" class="px-0 pb-3 pt-2">
-                  <i class="far fa-clock living-coral-text"></i>
-                </th>
-                <td class="pb-3 pt-2"><span class="deep-purple-text me-2"></span> Always Open</td>
-              </tr>
-              <tr class="mt-2">
-                <th scope="row" class="px-0 pb-3 pt-2">
-                  <i class="fas fa-cloud-moon living-coral-text"></i>
-                </th>
-                <td class="pb-3 pt-2">Sunny weather tomorrow</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-  </section>
-</div>
-{{!-- map ends here --}}
+</html>
