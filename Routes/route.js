@@ -22,4 +22,8 @@ route.get("/contact", (req, res) => {
   res.render("contact")
 })
 
+route.get("*", (req, res) => {
+  res.render("404")
+})
+
 module.exports = route
