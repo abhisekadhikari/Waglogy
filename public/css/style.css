@@ -21,6 +21,27 @@
     opacity: 1;
 }
 
+
+.btttn{
+    animation:shake 2s infinite;
+    width:125px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    background-color:#f74b8d;
+    color:#fff;
+    font-size:16px;
+    font-family:'Lucida Sans';
+}
+@keyframes shake{
+    10%{transform: scale(1.05) rotate(10deg);}
+    20%{transform: scale(1.05) rotate(-10deg);}
+    30%{transform: scale(1.05) rotate(10deg);}
+    40%{transform:none;}
+    from{background-color:#f74b8d;}
+    to{background-color: blue;}
+    10%{font-size:18px;}
+}
 .back-to-top {
     position: fixed;
     display: none;

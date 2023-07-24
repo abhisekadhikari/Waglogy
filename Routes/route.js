@@ -14,12 +14,15 @@ route.get("/about", (req, res) => {
   res.render("about")
 })
 
-route.get("/services", (req, res) => {
+route.get("/service", (req, res) => {
   res.render("service")
 })
 
 route.get("/contact", (req, res) => {
   res.render("contact")
+})
+route.get("/project", (req, res) => {
+  res.render("project")
 })
 
 route.get("*", (req, res) => {
