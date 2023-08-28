@@ -1,5 +1,4 @@
 const express = require("express")
-const path = require("path")
 const bodyParser = require("body-parser")
 const cookieParser = require("cookie-parser")
 const { engine } = require("express-handlebars")
@@ -17,7 +16,7 @@ app.use(require("./Routes/route"))
 DB_link = process.env.MONGO
 port = process.env.PORT || 3000
 mongoose
-  .connect(DB_link)
+  .connect(process.env.DB_LINK)
   .then(() => {
     console.log("Connection Successful")
   })
