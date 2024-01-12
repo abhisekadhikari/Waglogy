@@ -1,1 +1,1 @@
-export const DB_NAME = "waglogy" 
+export const DB_NAME = "waglogy"

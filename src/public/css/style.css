@@ -1,9 +1,9 @@
 /**********   CSS **********/
 :root {
-    --primary: #38B6FF;
-    --secondary: #FF6922;
-    --light: #EFFDF5;
-    --dark: #0E2E50;
+    --primary: #38b6ff;
+    --secondary: #ff6922;
+    --light: #effdf5;
+    --dark: #0e2e50;
 }
 
 .back-to-top {
@@ -14,55 +14,56 @@
     z-index: 99;
 }
 
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    transition:
+        opacity 0.5s ease-out,
+        visibility 0s linear 0.5s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    transition:
+        opacity 0.5s ease-out,
+        visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
 
-
 /*** Button ***/
 .btn {
-    transition: .5s;
+    transition: 0.5s;
 }
-.bg-primar{
-   background-color: #38B6FF;
+.bg-primar {
+    background-color: #38b6ff;
 }
-.text-primar{
-    color: #38B6FF;
+.text-primar {
+    color: #38b6ff;
 }
-.btn.btn-primary{
-   background-color: #38B6FF;
-   border-color: #38B6FF;
+.btn.btn-primary {
+    background-color: #38b6ff;
+    border-color: #38b6ff;
 }
-.btn.btn-secondary{
-    background-color: #38B6FF;
-    border-color: #38B6FF;
- }
- 
+.btn.btn-secondary {
+    background-color: #38b6ff;
+    border-color: #38b6ff;
+}
+
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
-    
+    color: #ffffff;
 }
-.btn-outline-primar{
-background-color: #38B6FF;
-border-color: #38B6FF;
+.btn-outline-primar {
+    background-color: #38b6ff;
+    border-color: #38b6ff;
 }
 .btn-square {
     width: 38px;
     height: 38px;
 }
-.contt{
+.contt {
     display: flex;
     flex-direction: row;
 }
@@ -87,13 +88,12 @@ border-color: #38B6FF;
     border-radius: 50px;
 }
 
-
 /*** Navbar ***/
 .nav-bar {
     position: relative;
     margin-top: 45px;
     padding: 0 3rem;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 9999;
 }
 
@@ -104,7 +104,7 @@ border-color: #38B6FF;
 }
 
 .navbar {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 
 .navbar .dropdown-toggle::after {
@@ -114,17 +114,17 @@ border-color: #38B6FF;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 5px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-.navbar .dropdown-toggle[aria-expanded=true]::after {
+.navbar .dropdown-toggle[aria-expanded="true"]::after {
     transform: rotate(-180deg);
 }
 
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
@@ -141,13 +141,13 @@ border-color: #38B6FF;
         padding: 0;
     }
 
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
 
     .navbar-light .navbar-nav {
-        border-top: 1px solid #EEEEEE;
+        border-top: 1px solid #eeeeee;
     }
 }
 
@@ -169,18 +169,16 @@ border-color: #38B6FF;
         transform-origin: 0% 0%;
         opacity: 0;
         visibility: hidden;
-        transition: .5s;
-        
+        transition: 0.5s;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
         transform: rotateX(0deg);
         visibility: visible;
-        transition: .5s;
+        transition: 0.5s;
         opacity: 1;
     }
 }
-
 
 /*** Header ***/
 @media (min-width: 992px) {
@@ -206,11 +204,11 @@ border-color: #38B6FF;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: #ffffff;
     background: var(--primary);
     border-radius: 40px;
     font-size: 20px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .header-carousel .owl-nav .owl-prev:hover,
@@ -225,9 +223,8 @@ border-color: #38B6FF;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    color: #DDDDDD;
+    color: #dddddd;
 }
-
 
 /*** Icon ***/
 .icon {
@@ -235,11 +232,10 @@ border-color: #38B6FF;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF !important;
+    background: #ffffff !important;
     border-radius: 50px;
     border: 1px dashed var(--primary) !important;
 }
-
 
 /*** About ***/
 .about-img img {
@@ -259,12 +255,11 @@ border-color: #38B6FF;
     z-index: 1;
 }
 
-
 /*** Category ***/
 .cat-item div {
-    background: #FFFFFF;
-    border: 1px dashed rgba(0, 185, 142, .3);
-    transition: .5s;
+    background: #ffffff;
+    border: 1px dashed rgba(0, 185, 142, 0.3);
+    transition: 0.5s;
 }
 
 .cat-item:hover div {
@@ -273,13 +268,12 @@ border-color: #38B6FF;
 }
 
 .cat-item div * {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .cat-item:hover div * {
-    color: #FFFFFF !important;
+    color: #ffffff !important;
 }
-
 
 /*** Property List ***/
 .nav-pills .nav-item .btn {
@@ -288,15 +282,15 @@ border-color: #38B6FF;
 
 .nav-pills .nav-item .btn:hover,
 .nav-pills .nav-item .btn.active {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .property-item {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 
 .property-item img {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .property-item:hover img {
@@ -304,28 +298,27 @@ border-color: #38B6FF;
 }
 
 .property-item .border-top {
-    border-top: 1px dashed rgba(0, 185, 142, .3) !important;
+    border-top: 1px dashed rgba(0, 185, 142, 0.3) !important;
 }
 
 .property-item .border-end {
-    border-right: 1px dashed rgba(0, 185, 142, .3) !important;
+    border-right: 1px dashed rgba(0, 185, 142, 0.3) !important;
 }
-
 
 /*** Team ***/
 .team-item {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
-    transition: .5s;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
 }
 
 .team-item .btn {
     color: var(--primary);
-    background: #FFFFFF;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 }
 
 .team-item .btn:hover {
-    color: #FFFFFF;
+    color: #ffffff;
     background: var(--primary);
 }
 
@@ -341,7 +334,6 @@ border-color: #38B6FF;
     color: var(--secondary) !important;
 }
 
-
 /*** Testimonial ***/
 .testimonial-carousel {
     padding-left: 1.5rem;
@@ -356,7 +348,7 @@ border-color: #38B6FF;
 }
 
 .testimonial-carousel .testimonial-item .border {
-    border: 1px dashed rgba(0, 185, 142, .3) !important;
+    border: 1px dashed rgba(0, 185, 142, 0.3) !important;
 }
 
 .testimonial-carousel .owl-nav {
@@ -378,18 +370,17 @@ border-color: #38B6FF;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: #ffffff;
     background: var(--primary);
     border-radius: 40px;
     font-size: 20px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
     background: var(--dark);
 }
-
 
 /*** Footer ***/
 .footer .btn.btn-social {
@@ -400,9 +391,9 @@ border-color: #38B6FF;
     align-items: center;
     justify-content: center;
     color: var(--light);
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 35px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .footer .btn.btn-social:hover {
@@ -418,7 +409,7 @@ border-color: #38B6FF;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .footer .btn.btn-link::before {
@@ -435,13 +426,13 @@ border-color: #38B6FF;
 }
 
 .footer .form-control {
-    border-color: rgba(255,255,255,0.5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .footer .copyright {
     padding: 25px 0;
     font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    border-top: 1px solid rgba(256, 256, 256, 0.1);
 }
 
 .footer .copyright a {
@@ -451,7 +442,7 @@ border-color: #38B6FF;
 .footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer .footer-menu a:last-child {

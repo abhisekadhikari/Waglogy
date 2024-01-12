@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose"
 const homeContactSchema = mongoose.Schema(
     {
         name: {
@@ -18,6 +18,6 @@ const homeContactSchema = mongoose.Schema(
         timestamps: true,
     }
 )
-const HomeContact = mongoose.model('HomeContact', homeContactSchema)
+const HomeContact = mongoose.model("HomeContact", homeContactSchema)
 
 export default HomeContact

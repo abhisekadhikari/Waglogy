@@ -6,16 +6,16 @@ import globalErrorMiddleware from "./middlewares/globalErrorMiddleware.js"
 const app = express()
 const __dirname = path.resolve()
 app.use(
-  cors({
-    origin: process.env.CORS_ORIGIN,
-    credentials: true,
-  })
+    cors({
+        origin: process.env.CORS_ORIGIN,
+        credentials: true,
+    })
 )
 app.use(express.json())
 app.use(
-  urlencoded({
-    extended: true,
-  })
+    urlencoded({
+        extended: true,
+    })
 )
 
 app.use(express.static(path.join(__dirname, "/src", "/public")))
