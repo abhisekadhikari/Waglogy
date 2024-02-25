@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Waglogy Projects</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="Contact Waglogy" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!--   Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container-xxl bg-white p-0">
+            <!-- Spinner Start -->
+            <div
+                id="spinner"
+                class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+            >
+                <div
+                    class="spinner-border text-primary"
+                    style="width: 3rem; height: 3rem"
+                    role="status"
+                >
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+
+            <!-- Navbar Start -->
+            <div class="container-fluid nav-bar bg-transparent">
+                <nav
+                    class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4"
+                >
+                    <a
+                        href="index.html"
+                        class="navbar-brand d-flex align-items-center text-center"
+                    >
+                        <div class="icon p-2 me-2">
+                            <img
+                                class="img-fluid"
+                                src="img/1.svg"
+                                alt="Icon"
+                                style="width: 30px; height: 30px"
+                            />
+                        </div>
+                        <h1 style="color: #38b6ff">
+                            <span style="color: #000000">Wag</span>logy
+                        </h1>
+                    </a>
+                    <button
+                        type="button"
+                        class="navbar-toggler"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link"
+                                >Home</a
+                            >
+                            <a href="about.html" class="nav-item nav-link"
+                                >About</a
+                            >
+                            <div class="nav-item dropdown">
+                                <a
+                                    href="#"
+                                    class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    >Services</a
+                                >
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a
+                                        href="services.html"
+                                        class="dropdown-item"
+                                        >Web Services</a
+                                    >
+                                    <a
+                                        href="services.html"
+                                        class="dropdown-item"
+                                        >App services</a
+                                    >
+                                    <a
+                                        href="services.html"
+                                        class="dropdown-item"
+                                        >Graphics Services</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a
+                                    href="#"
+                                    class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    >Join us</a
+                                >
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="Partner.html" class="dropdown-item"
+                                        >Be Our Partner</a
+                                    >
+                                    <a
+                                        href="internship.html"
+                                        class="dropdown-item"
+                                        >Internships</a
+                                    >
+                                </div>
+                            </div>
+                            <a href="#" class="nav-item nav-link active"
+                                >Contact</a
+                            >
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar End -->
+
+            <!-- Header Start -->
+            <div class="container-fluid header bg-white p-0">
+                <div
+                    class="row g-0 align-items-center flex-column-reverse flex-md-row"
+                >
+                    <div class="col-md-6 p-5 mt-lg-5">
+                        <h1 class="display-5 animated fadeIn mb-4">
+                            Explore Our Projects
+                        </h1>
+                        <nav aria-label="breadcrumb animated fadeIn">
+                            <ol class="breadcrumb text-uppercase">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li
+                                    class="breadcrumb-item text-body active"
+                                    aria-current="page"
+                                >
+                                    Projects
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-6 animated fadeIn">
+                        <img class="img-fluid" src="img/h2.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- Header End -->
+
+            <!-- Search Start -->
+            <div
+                class="container-fluid mb-5 wow fadeIn"
+                data-wow-delay="0.1s"
+                style="padding: 35px; background-color: #38b6ff"
+            >
+                <div class="container">
+                    <div class="row g-2">
+                        <div class="col-md-10">
+                            <div class="row g-2">
+                                <div class="col-md-4">
+                                    <input
+                                        type="text"
+                                        class="form-control border-0 py-3"
+                                        placeholder="Your Name"
+                                    />
+                                </div>
+                                <div class="col-md-4">
+                                    <input
+                                        type="text"
+                                        class="form-control border-0 py-3"
+                                        placeholder="Business Category"
+                                    />
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-select border-0 py-3">
+                                        <option selected>
+                                            Service you Need
+                                        </option>
+                                        <option value="1">
+                                            WEB DEVLOPMENT
+                                        </option>
+                                        <option val="1">App Devlopment</option>
+                                        <option value="2">
+                                            GRAPHICS DESIGNING
+                                        </option>
+                                        <option value="3">EDITING</option>
+                                        <option value="3">SEO</option>
+                                        <option value="3">OTHERS</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button
+                                class="btn border-0 w-100 py-3"
+                                style="background-color: #c6e7fa"
+                            >
+                                Send
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Search End -->
+
+            <!-- Contact Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div
+                        class="text-center mx-auto mb-5 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                        style="max-width: 600px"
+                    >
+                        <h1 class="mb-3">Explore Our Projects</h1>
+                        <p>
+                            Discover our portfolio and unlock the potential to transform your vision
+                             into digital triumphs. Contact us today to explore our projects!
+                        </p>
+                    </div>
+
+
+<!-- Card Wider -->
+<div class="card card-cascade wider">
+
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <img class="card-img-top" src="/img/mud.png" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+  
+    <!-- Card content -->
+    <div class="card-body card-body-cascade text-center pb-0">
+  
+      <!-- Title -->
+      <h4 class="card-title"><strong>Mud Beaver Sikkim</strong></h4>
+      <!-- Subtitle -->
+      <h5 class="blue-text pb-2"><strong>THE ENTERPRISE</strong></h5>
+      <!-- Text -->
+      <p class="card-text"> <a href="https://www.mudbeaversikkim.in/">Mud Beaver Sikkim</a> is a socio-sustainable construction enterprise
+         focussing on specialisation in research, development, promotion and transfer of earth 
+         based building technologies.
+    </p>
+  
+      <!-- Linkedin -->
+      <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Twitter -->
+      <a class="px-2 fa-lg tw-ic"><i class="fab fa-instagram"></i></a>
+      <!-- Dribbble -->
+      <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
+  
+      <!-- Card footer -->
+      <div class="card-footer text-muted text-center mt-4">
+        2 days ago
+      </div>
+  
+    </div>
+  
+  </div>
+  <!-- Card Wider -->
+  
+  <!-- Card Narrower -->
+  <div class="card card-cascade narrower">
+  
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <img class="card-img-top" src="/img/som.png"
+        alt="Card image cap">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+  
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+  
+      <!-- Label -->
+      <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Hotel Somras</h5>
+      <!-- Title -->
+      <h4 class="font-weight-bold card-title">Discover Tranquility and Renewal</h4>
+      <!-- Text -->
+      <p class="card-text"> <a href="https://hotelsomras.in/">Hotel Somras</a>  nestled in the heart of the picturesque Chisopani, South & west Sikkim, Hotel Somras is more than just a place to stay; it's an experience waiting to be discovered. Our story is one of passion,
+         hospitality, and a deep love for the beauty of South & west Sikkim.</p>
+      <!-- Button -->
+  
+    </div>
+  
+    <!-- Card footer -->
+    <div class="card-footer text-muted text-center">
+      2 days ago
+    </div>
+  
+  </div>
+  <!-- Card Narrower -->
+  
+  <!-- Card Regular -->
+  <div class="card card-cascade">
+  
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <img class="card-img-top" src="/img/teen.png" alt="Card image cap">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+  
+    <!-- Card content -->
+    <div class="card-body card-body-cascade text-center">
+  
+      <!-- Title -->
+      <h4 class="card-title"><strong>Teentaley Travels</strong></h4>
+      <!-- Subtitle -->
+      <h6 class="font-weight-bold indigo-text py-2">Tours & Travels</h6>
+      <!-- Text -->
+      <p class="card-text"> <a href="https://teentaleytoursandtravels.com/" >Teentaley</a>   tours and travels offer an unforgettable experience in the beautiful hill town of Teentaley, Sikkim, India.
+         Our guests will have the opportunity to explore the natural beauty of the region
+      </p>
+  
+      <!-- Facebook -->
+      <a type="button" class="btn-floating btn-small btn-fb"><i class="fab fa-facebook-f"></i></a>
+      <!-- Twitter -->
+      <a type="button" class="btn-floating btn-small btn-tw"><i class="fab fa-twitter"></i></a>
+      <!-- Google + -->
+      <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fab fa-dribbble"></i></a>
+  
+    </div>
+  
+    <!-- Card footer -->
+    <div class="card-footer text-muted text-center">
+      2 days ago
+    </div>
+  
+  </div>
+  <!-- Card Regular --><!-- Card Wider -->
+<div class="card card-cascade wider">
+
+  <!-- Card image -->
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="/img/all.png" alt="Card image cap">
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body card-body-cascade text-center pb-0">
+
+    <!-- Title -->
+    <h4 class="card-title"><strong>Aal Homestay</strong></h4>
+    <!-- Subtitle -->
+    <h5 class="blue-text pb-2"><strong>Where strangers become family</strong></h5>
+    <!-- Text -->
+    <p class="card-text"> <a href="https://aalhomestay.com/">AAl Homestay</a>  located in a serene environment close to popular tourist attractions, we strive to make our guests feel at home away from home.</p>
+
+    <!-- Linkedin -->
+    <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
+    <!-- Twitter -->
+    <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
+    <!-- Dribbble -->
+    <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
+
+    <!-- Card footer -->
+    <div class="card-footer text-muted text-center mt-4">
+      2 days ago
+    </div>
+
+  </div>
+
+</div>
+<!-- Card Wider -->
+
+<!-- Card Narrower -->
+<div class="card card-cascade narrower">
+
+  <!-- Card image -->
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="/img/grap.png"
+      alt="Card image cap">
+    <a>
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body card-body-cascade">
+
+    <!-- Label -->
+    <h5 class="pink-text pb-2 pt-1"><i class="fa fa-instagram"></i>Logo Designs for varous organization </h5>
+    <!-- Title -->
+    <h4 class="font-weight-bold card-title">Graphics & Editing</h4>
+    <!-- Text -->
+    <p class="card-text">At Waglogy, we believe in pushing the boundaries of innovation. Beyond our core services, we offer a spectrum of
+         technological solutions tailored to propel your business into the future</p>
+    <!-- Button -->
+
+  </div>
+
+  <!-- Card footer -->
+  <div class="card-footer text-muted text-center">
+    2 days ago
+  </div>
+
+</div>
+<!-- Card Narrower -->
+
+<!-- Card Regular -->
+<div class="card card-cascade">
+
+  <!-- Card image -->
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="/img/aik.png" alt="Card image cap">
+    <a>
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body card-body-cascade text-center">
+
+    <!-- Title -->
+    <h4 class="card-title"><strong>Designing And Editing</strong></h4>
+    <!-- Subtitle -->
+    <h6 class="font-weight-bold indigo-text py-2">For <a href="https://sist.edu.in/"> Sikkim Institute of science and technology </a></h6>
+    <!-- Text -->
+    <p class="card-text">We are official design partner for aikyam 2k24 a annual fest. you can check out the designs we created at sist  social handels
+    </p>
+
+    <!-- Facebook -->
+    <a type="button" class="btn-floating btn-small btn-fb"><i class="fab fa-facebook-f"></i></a>
+    <!-- Twitter -->
+    <a type="button" class="btn-floating btn-small btn-tw"><i class="fab fa-twitter"></i></a>
+    <!-- Google + -->
+    <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fab fa-dribbble"></i></a>
+
+  </div>
+
+  <!-- Card footer -->
+  <div class="card-footer text-muted text-center">
+    2 days ago
+  </div>
+
+</div>
+<!-- Card Regular -->
+
+
+
+
+
+
+
+
+
+
+                    <div class="row g-4">
+                      
+                       
+
+
+
+
+                    
+            <!-- Footer Start -->
+            <div
+            class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>Namchi,
+                            Chisopani, 737121
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3"></i>+91 9733
+                            814168
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3"></i
+                            >info@waglogy.in
+                        </p>
+                        <div class="d-flex pt-2">
+                            <a
+                                class="btn btn-outline-light btn-social"
+                                href="https://www.instagram.com/waglogy/"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                            <a
+                                class="btn btn-outline-light btn-social"
+                                href="https://www.facebook.com/p/Wag-Logy-100088111282938/?locale=hi_IN"
+                                ><i class="fab fa-facebook-f"></i
+                            ></a>
+                            <a
+                                class="btn btn-outline-light btn-social"
+                                href="https://github.com/orgs/Waglogy"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                            <a
+                                class="btn btn-outline-light btn-social"
+                                href="https://www.linkedin.com/company/waglogy/?originalSubdomain=in"
+                                ><i class="fab fa-linkedin-in"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="/about.html"
+                            >About Us</a
+                        >
+                        <a class="btn btn-link text-white-50" href="/contact.html"
+                            >Contact Us</a
+                        >
+                        <a class="btn btn-link text-white-50" href="/services.html"
+                            >Our Services</a
+                        >
+                        <a
+                            class="btn btn-link text-white-50"
+                            href="/privacy.html"
+                            >Privacy Policy</a
+                        >
+                        <a
+                            class="btn btn-link text-white-50"
+                            href="/terms.html"
+                            >Terms & Condition</a
+                        >
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>
+                            Suscribe to our news latter to get regural
+                            updates !
+                        </p>
+                        <div
+                            class="position-relative mx-auto"
+                            style="max-width: 400px"
+                        >
+                            <input
+                                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                                type="text"
+                                placeholder="Your email"
+                            />
+                            <button
+                                type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                            >
+                                SignUp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div
+                            class="col-md-6 text-center text-md-start mb-3 mb-md-0"
+                        >
+                            &copy;
+                            <a class="border-bottom" href="#">Waglogy</a>,
+                            All Right Reserved.
+
+                            <!--/*** This   is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the   without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By
+                            <a
+                                class="border-bottom"
+                                href="https://waglogy.in"
+                                >Team Waglogy</a
+                            >
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Footer End -->
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+                ><i class="bi bi-arrow-up"></i
+            ></a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!--   Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
