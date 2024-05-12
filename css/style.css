@@ -2,8 +2,8 @@
 :root {
     --primary: #38b6ff;
     --secondary: #ff6922;
-    --light: #effdf5;
-    --dark: #0e2e50;
+    --light: #82e7eb;
+    --dark: #86bcf5;
 }
 
 .back-to-top {
@@ -13,6 +13,37 @@
     bottom: 45px;
     z-index: 99;
 }
+.carousel-overlay {
+    position: absolute;
+    bottom: 20px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    width: 100%; /* Ensure the overlay spans the full width */
+}
+
+.carousel-overlay h3 {
+    font-size: 15px;
+    margin-bottom: 10px; /* Adjust this value as needed */
+}
+
+.carousel-overlay .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
+    margin-top: -100px;
+}
+
+
+
+
 
 /*** Spinner ***/
 #spinner {
